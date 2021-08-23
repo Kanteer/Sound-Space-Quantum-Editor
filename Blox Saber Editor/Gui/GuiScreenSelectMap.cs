@@ -33,8 +33,8 @@ namespace Sound_Space_Editor.Gui
                 _lastMapButton = new GuiButton(3, 0, 0, 256, 48, "EDIT LAST MAP");
                 Buttons.Add(_lastMapButton);
             }
-            _createMapButton = new GuiButton(0, 0, 0, 256, 48, "CREATE NEW MAP");
-            _loadMapButton = new GuiButton(1, 0, 0, 256, 48, "EDIT EXISTING MAP");
+            _createMapButton = new GuiButton(0, 0, 0, 256, 48, "CREATE NEW");
+            _loadMapButton = new GuiButton(1, 0, 0, 256, 48, "EDIT LOCAL");
             _importButton = new GuiButton(2, 0, 0, 256, 48, "IMPORT MAP");
             _pasteDataButton = new GuiButton(4, 0, 0, 256, 36, "PASTE DATA");
             _githubButton = new GuiButton(5, 0, 0, 256, 36, "GITHUB LINK");
@@ -142,7 +142,7 @@ namespace Sound_Space_Editor.Gui
                     }
                     catch
                     {
-                        MessageBox.Show("Couldn't read map data. Do you have the map copied correctly?");
+                        MessageBox.Show("Couldn't read map data. File may be corrupted or copied incorrectly.");
                     }
                     break;
             }
