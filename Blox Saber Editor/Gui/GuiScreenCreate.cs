@@ -14,8 +14,8 @@ namespace Sound_Space_Editor.Gui
 		public GuiScreenCreate() : base(0, 0, 0, 0)
 		{
 			_tb = new GuiTextBox(0, 0, 256, 64) { Centered = true, Focused = true };
-			_btnCreate = new GuiButton(0, 0, 0, 256, 64, "CREATE");
-			_btnBack = new GuiButton(1, 0, 0, 256, 64, "BACK");
+			_btnCreate = new GuiButton(0, 0, 0, 256, 64, "CREATE NEW MAP!");
+			_btnBack = new GuiButton(1, 0, 0, 256, 64, "WAIT, GO BACK!");
 
 			_lbl.Color = Color.FromArgb(255, 255, 255);
 
