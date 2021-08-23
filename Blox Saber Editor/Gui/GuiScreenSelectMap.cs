@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -121,34 +121,37 @@ namespace Sound_Space_Editor.Gui
                     }
                     break;
                 case 3:
-                    EditorWindow.Instance.LoadFile(Properties.Settings.Default.LastFile);
+                   // EditorWindow.Instance.LoadFile(Properties.Settings.Default.LastFile);
                     break;
-                case 4:
-                    try
-                    {
-                        var clipboard = Clipboard.GetText();
-                        EditorWindow.Instance.LoadMap(clipboard, false);
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                    break;
-                case 5:
-                    try
-                    {
-                        var gclipboard = Clipboard.GetText();
-                        WebClient wc = new WebClient();
-                        var reply = wc.DownloadString(gclipboard);
-                        EditorWindow.Instance.LoadMap(reply, false);
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Couldn't read map data. File may be corrupted or copied incorrectly.");
-                    }
-                    break;
+                    /*case 4:
+                        try
+                        {
+                            var clipboard = Clipboard.GetText();
+                            EditorWindow.Instance.LoadMap(clipboard, false);
+                        }
+                        catch
+                        {
+                            return;
+                        }
+                        break;
+                    case 5:
+                        try
+                        {
+                            var gclipboard = Clipboard.GetText();
+                            WebClient wc = new WebClient();
+                            var reply = wc.DownloadString(gclipboard);
+                            EditorWindow.Instance.LoadMap(reply, false);
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Couldn't read map data. File may be corrupted or copied incorrectly.");
+                        }
+                        break;*/
             }
             base.OnButtonClicked(id);
         }
     }
 }
+
+
+//hi avibah
