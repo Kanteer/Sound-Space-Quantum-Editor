@@ -106,16 +106,18 @@ namespace Sound_Space_Editor.Gui
                     }
                     break;
                 case 2:
-                    if (importmapclicked == false)
+                    var gclipboard = Clipboard.GetText()
+                    WebClient wc = new WebClient()
+                    try
                     {
-                        importmapclicked = true;
-                        _pasteDataButton.Visible = true;
-                        _githubButton.Visible = true;
-                    } else
+                        while (true)
+                        {
+                            gclipboard = wc.DownloadString(gclipboard);
+                        }
+                    }
+                    catch
                     {
-                        importmapclicked = false;
-                        _pasteDataButton.Visible = false;
-                        _githubButton.Visible = false;
+                        EditorWindow.Instance.LoadMap(gclipboard, false);
                     }
                     break;
                 case 3:
