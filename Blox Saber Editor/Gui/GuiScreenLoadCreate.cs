@@ -18,8 +18,8 @@ namespace Sound_Space_Editor.Gui
 		private readonly GuiButton _loadButton;
 		private readonly GuiButton _pasteButton;
 		private readonly GuiButton _githubButton;
-		private readonly GuiLabel _lbl = new GuiLabel(0, 0, "Source Code: github.com/TominoCZ");
-		private readonly GuiLabel _lbl2 = new GuiLabel(0, 0, "New features: David20122");
+		private readonly GuiLabel _lbl = new GuiLabel(0, 0, "Source Code: github.com/David20122 and github.com/TominoCZ");
+		private readonly GuiLabel _lbl2 = new GuiLabel(0, 0, "New features: Avibah and Kanteer");
 
 		private readonly List<Particle> _particles = new List<Particle>();
 
@@ -35,7 +35,7 @@ namespace Sound_Space_Editor.Gui
 			}
 
 			_createButton = new GuiButton(0, 0, 0, 192, 64, "CREATE MAP");
-			_loadButton = new GuiButton(1, 0, 0, 192, 64, "LOAD MAP");
+			_loadButton = new GuiButton(1, 0, 0, 192, 64, "LOAD MAP/LINK");
 			_pasteButton = new GuiButton(2, 0, 0, 192, 64, "PASTE DATA");
 			_githubButton = new GuiButton(3, 0, 0, 192, 64, "LOAD GITHUB LINK");
 
