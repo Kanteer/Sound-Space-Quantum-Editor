@@ -85,7 +85,7 @@ namespace Sound_Space_Editor
             var face = (FtFace)Marshal.PtrToStructure(faceptr, typeof(FtFace));
             if ((((int)face.face_flags) & ((int)((FtLong)FtFaceFlags.FtFaceFlagHorizontal))) !=
                 (int)((FtLong)FtFaceFlags.FtFaceFlagHorizontal))
-                Console.WriteLine("WARNING! The font '" + font + "' is not suitable for horizontal left-to-right text output.");
+                Console.WriteLine("WARNING! The font '" + font + "' is not suitable. Please use a different font!");
 
             if ((((int)face.face_flags) & ((int)((FtLong)FtFaceFlags.FtFaceFlagFixedWidth))) !=
                 (int)((FtLong)FtFaceFlags.FtFaceFlagFixedWidth))
