@@ -1,4 +1,6 @@
-﻿using System;
+//thank you so much avibah wtf
+//This holds all the buttons for the menu screen
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Net;
@@ -35,9 +37,9 @@ namespace Sound_Space_Editor.Gui
 			}
 
 			_createButton = new GuiButton(0, 0, 0, 192, 64, "CREATE MAP");
-			_loadButton = new GuiButton(1, 0, 0, 192, 64, "LOAD MAP/LINK");
-			_pasteButton = new GuiButton(2, 0, 0, 192, 64, "PASTE DATA");
-			_githubButton = new GuiButton(3, 0, 0, 192, 64, "LOAD GITHUB LINK");
+			_loadButton = new GuiButton(1, 0, 0, 192, 64, "LOAD LOCAL");
+			_pasteButton = new GuiButton(2, 0, 0, 192, 64, "PASTE MAP");
+			_githubButton = new GuiButton(3, 0, 0, 192, 64, "OPTIONS");
 
 			_lbl.Color = Color.FromArgb(169, 169, 169);
 			_lbl2.Color = Color.FromArgb(169, 169, 169);
@@ -232,3 +234,4 @@ namespace Sound_Space_Editor.Gui
 		}
 	}
 }
+
