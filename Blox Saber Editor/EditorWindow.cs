@@ -134,17 +134,17 @@ namespace Sound_Space_Editor
             SoundPlayer.Cache("hit");
             SoundPlayer.Cache("click");
 
-            KeyMapping.Add(Key.Q, new Tuple<int, int>(0, 0));
-            KeyMapping.Add(Key.W, new Tuple<int, int>(1, 0));
-            KeyMapping.Add(Key.E, new Tuple<int, int>(2, 0));
+            KeyMapping.Add(Key.E, new Tuple<int, int>(0, 0));
+            KeyMapping.Add(Key.R, new Tuple<int, int>(1, 0));
+            KeyMapping.Add(Key.T, new Tuple<int, int>(2, 0));
 
-            KeyMapping.Add(Key.A, new Tuple<int, int>(0, 1));
-            KeyMapping.Add(Key.S, new Tuple<int, int>(1, 1));
-            KeyMapping.Add(Key.D, new Tuple<int, int>(2, 1));
+            KeyMapping.Add(Key.D, new Tuple<int, int>(0, 1));
+            KeyMapping.Add(Key.F, new Tuple<int, int>(1, 1));
+            KeyMapping.Add(Key.G, new Tuple<int, int>(2, 1));
 
-            KeyMapping.Add(Key.Y, new Tuple<int, int>(0, 2)); KeyMapping.Add(Key.Z, new Tuple<int, int>(0, 2));
-            KeyMapping.Add(Key.X, new Tuple<int, int>(1, 2));
-            KeyMapping.Add(Key.C, new Tuple<int, int>(2, 2));
+            KeyMapping.Add(Key.C, new Tuple<int, int>(0, 2));
+            KeyMapping.Add(Key.V, new Tuple<int, int>(1, 2));
+            KeyMapping.Add(Key.B, new Tuple<int, int>(2, 2));
 
             _playbackOffset = offset;
 
