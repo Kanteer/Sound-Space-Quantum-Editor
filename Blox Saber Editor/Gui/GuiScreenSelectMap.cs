@@ -106,8 +106,8 @@ namespace Sound_Space_Editor.Gui
                     }
                     break;
                 case 2:
-                    var gclipboard = Clipboard.GetText()
-                    WebClient wc = new WebClient()
+                    var gclipboard = Clipboard.GetText();
+                    WebClient wc = new WebClient();
                     try
                     {
                         while (true)
