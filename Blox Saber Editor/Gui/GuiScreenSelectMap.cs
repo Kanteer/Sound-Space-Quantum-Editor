@@ -142,7 +142,7 @@ namespace Sound_Space_Editor.Gui
                     }
                     catch
                     {
-                        MessageBox.Show("Couldn't read map data from the link. Do you have it copied?");
+                        MessageBox.Show("Couldn't read map data]. Do you have the map copied correctly?");
                     }
                     break;
             }
