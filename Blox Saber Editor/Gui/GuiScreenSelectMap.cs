@@ -18,33 +18,35 @@ namespace Sound_Space_Editor.Gui
         private GuiButton _loadMapButton;
         private GuiButton _lastMapButton;
         private GuiButton _importButton;
-        private GuiButton _pasteDataButton;
-        private GuiButton _githubButton;
-        private bool importmapclicked = false;
+        private GuiButton _lastMapText;
+        //private GuiButton _pasteDataButton;
+        //private GuiButton _githubButton;
 
         public GuiScreenSelectMap() : base(0, 0, EditorWindow.Instance.ClientSize.Width, EditorWindow.Instance.ClientSize.Height)
         {
             using (var img = Properties.Resources.logo)
             {
-                logoTxt = TextureManager.GetOrRegister("logo",img,true);
+                logoTxt = TextureManager.GetOrRegister("logo", img, true);
             }
-            if (File.Exists(Properties.Settings.Default.LastFile))
-            {
-                _lastMapButton = new GuiButton(3, 0, 0, 256, 48, "EDIT LAST MAP");
-                Buttons.Add(_lastMapButton);
-            }
+            //if (File.Exists(Properties.Settings.Default.LastFile))
+            //{
+            _lastMapButton = new GuiButton(3, 0, 0, 256, 48, "OPTIONS");
+            Buttons.Add(_lastMapButton);
+            //}
             _createMapButton = new GuiButton(0, 0, 0, 256, 48, "CREATE NEW");
             _loadMapButton = new GuiButton(1, 0, 0, 256, 48, "EDIT LOCAL");
             _importButton = new GuiButton(2, 0, 0, 256, 48, "IMPORT MAP");
-            _pasteDataButton = new GuiButton(4, 0, 0, 256, 36, "PASTE DATA");
+            _lastMapText = new GuiButton(-1, 0, 0, 256, 36, "Not yet implemented");
+            /*_pasteDataButton = new GuiButton(4, 0, 0, 256, 36, "PASTE DATA");
             _githubButton = new GuiButton(5, 0, 0, 256, 36, "GITHUB LINK");
             _pasteDataButton.Visible = false;
-            _githubButton.Visible = false;
+            _githubButton.Visible = false;*/
             Buttons.Add(_createMapButton);
             Buttons.Add(_loadMapButton);
             Buttons.Add(_importButton);
-            Buttons.Add(_pasteDataButton);
-            Buttons.Add(_githubButton);
+            Buttons.Add(_lastMapText);
+            //Buttons.Add(_pasteDataButton);
+            //Buttons.Add(_githubButton);
             OnResize(EditorWindow.Instance.ClientSize);
         }
 
@@ -68,11 +70,17 @@ namespace Sound_Space_Editor.Gui
                 _importButton.ClientRectangle.Y = ClientRectangle.Height * 0.8f;
                 _lastMapButton.ClientRectangle.X = ClientRectangle.Width / 2 + 262;
                 _lastMapButton.ClientRectangle.Y = ClientRectangle.Height * 0.8f;
-                _pasteDataButton.ClientRectangle.X = 123456;
+
+                _lastMapText.ClientRectangle.X = _lastMapButton.ClientRectangle.X;
+                _lastMapText.ClientRectangle.Y = _lastMapButton.ClientRectangle.Y - 36;
+
+
+                /*_pasteDataButton.ClientRectangle.X = 123456;
                 _pasteDataButton.ClientRectangle.Y = 123456;
                 _githubButton.ClientRectangle.X = 123456;
-                _githubButton.ClientRectangle.Y = 123456;
-            } else
+                _githubButton.ClientRectangle.Y = 123456;*/
+            }
+            else
             {
                 _createMapButton.ClientRectangle.X = ClientRectangle.Width / 2 - 518;
                 _createMapButton.ClientRectangle.Y = ClientRectangle.Height * 0.8f;
@@ -81,10 +89,10 @@ namespace Sound_Space_Editor.Gui
                 _importButton.ClientRectangle.X = ClientRectangle.Width / 2 + 2;
                 _importButton.ClientRectangle.Y = ClientRectangle.Height * 0.8f;
             }
-            _pasteDataButton.ClientRectangle.X = _importButton.ClientRectangle.X;
+            /*_pasteDataButton.ClientRectangle.X = _importButton.ClientRectangle.X;
             _pasteDataButton.ClientRectangle.Y = _importButton.ClientRectangle.Y - 36;
             _githubButton.ClientRectangle.X = _importButton.ClientRectangle.X;
-            _githubButton.ClientRectangle.Y = _importButton.ClientRectangle.Y - 72;
+            _githubButton.ClientRectangle.Y = _importButton.ClientRectangle.Y - 72;*/
             base.OnResize(size);
         }
         protected override void OnButtonClicked(int id)
@@ -121,7 +129,7 @@ namespace Sound_Space_Editor.Gui
                     }
                     break;
                 case 3:
-                   // EditorWindow.Instance.LoadFile(Properties.Settings.Default.LastFile);
+                    //EditorWindow.Instance.LoadFile(Properties.Settings.Default.LastFile);
                     break;
                     /*case 4:
                         try
@@ -152,6 +160,3 @@ namespace Sound_Space_Editor.Gui
         }
     }
 }
-
-
-//hi avibah
