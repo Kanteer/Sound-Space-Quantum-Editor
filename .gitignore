@@ -381,3 +381,12 @@ FodyWeavers.xsd
 *.txt
 *.cache
 .vs/Blox Saber Editor/v16/.suo
+.vs/Blox Saber Editor/v16/.suo
+Blox Saber Editor/obj/Release/Blox Saber Editor.csproj.CoreCompileInputs.cache
+Blox Saber Editor/obj/Release/Blox Saber Editor.csproj.FileListAbsolute.txt
+Blox Saber Editor/obj/Release/Blox Saber Editor.csproj.GenerateResource.cache
+Blox Saber Editor/obj/Release/Blox Saber Editor.csprojAssemblyReference.cache
+Launcher/obj/Release/Launcher.csproj.CoreCompileInputs.cache
+Launcher/obj/Release/Launcher.csproj.FileListAbsolute.txt
+Launcher/obj/Release/Launcher.csproj.GenerateResource.cache
+Launcher/obj/Release/Launcher.csprojAssemblyReference.cache
