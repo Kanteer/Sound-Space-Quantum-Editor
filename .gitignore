@@ -380,3 +380,4 @@ MigrationBackup/
 FodyWeavers.xsd
 *.txt
 *.cache
+.vs/Blox Saber Editor/v16/.suo
